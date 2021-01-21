@@ -1,0 +1,9 @@
+[Unit]
+Description=Powertop auto-tuning without HID powersaving
+
+[Service]
+Type=oneshot
+ExecStart=/usr/share/autotop-nohid/autotop-nohid.sh
+
+[Install]
+WantedBy=multi-user.target

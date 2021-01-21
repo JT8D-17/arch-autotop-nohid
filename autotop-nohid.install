@@ -1,0 +1,13 @@
+post_install() {
+echo 
+echo "Enabling autotop-nohid systemd unit..."
+systemctl enable autotop-nohid
+echo 
+} 
+
+pre_remove() {
+echo 
+echo "Disabling autotop-nohid systemd unit..."
+systemctl disable autotop-nohid
+echo
+}
