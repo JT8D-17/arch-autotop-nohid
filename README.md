@@ -3,7 +3,8 @@
 This shell script simply invokes `powertop --autotune` at startup via systemd unit, but then disables power saving for plugged in HID devices (such as a USB mouse) to avoid having to re-plug the mouse to make it work again. It uses code published by [Ric Klaren on Askubuntu](https://askubuntu.com/a/1026527).
 
 
-Usage on non-Arch-based distros is of course possible as well. The systemd unit calls the script from `/usr/share/autotop-nohid`.
+Usage on non-Arch-based distros is of course possible as well. The systemd unit calls the script from
+`/usr/share/autotop-nohid`.
 
 &nbsp;
 
@@ -22,7 +23,7 @@ Arch-based distros:
 `makepkg -sci`
 
 Note:    
-The `.install`script will enable the systemd unit automatically. If you do not want this, comment out the `install=` line in PKGBUILD.
+The `.install` script will enable the systemd unit automatically. If you do not want this, comment out the `install=` line in PKGBUILD.
 
 &nbsp;
 
